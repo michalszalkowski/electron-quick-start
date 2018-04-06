@@ -1,0 +1,15 @@
+{
+	"name": "MyApp",
+	"version": "1.0.0",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"package": "asar pack MyApp-linux-x64/resources/app MyApp-linux-x64/resources/app.asar",
+		"build": "electron-packager . MyApp --ignore=node_module --ignore=.idea"
+	},
+	"devDependencies": {
+		"asar": "^0.14.3",
+		"electron": "^1.8.4",
+		"electron-packager": "^12.0.0"
+	}
+}
